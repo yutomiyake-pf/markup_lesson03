@@ -328,8 +328,18 @@ img {
   justify-content: center;
   margin-bottom: 60px;
 }
+@media screen and (max-width: 834px) {
+  .imageLists {
+    flex-direction: column;
+  }
+}
 .imageLists__list {
   width: 33.3333333333%;
+}
+@media screen and (max-width: 834px) {
+  .imageLists__list {
+    width: 100%;
+  }
 }
 .imageLists__img {
   width: 100%;

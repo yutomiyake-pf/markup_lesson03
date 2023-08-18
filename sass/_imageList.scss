@@ -1,11 +1,20 @@
+@use "vars";
+
 .imageLists {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 60px;
 
+  @media screen and (max-width: vars.$breakPoint) {
+    flex-direction: column;
+  }
+
   &__list {
     width: calc(100% / 3);
+    @media screen and (max-width: vars.$breakPoint) {
+      width: 100%;
+    }
   }
 
   &__img {
